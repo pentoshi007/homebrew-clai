@@ -1,26 +1,26 @@
 class Clai < Formula
   desc "Cross-platform terminal AI assistant with ask and agent modes"
   homepage "https://github.com/pentoshi007/clai"
-  version "3.18.3"
+  version "4.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/pentoshi007/clai/releases/download/v#{version}/clai-bun-darwin-arm64"
-      sha256 "ab2fa0765354c25612041b85a32b70693ac73188d9c528aab38cb4ae57dec7c6"
+      sha256 "374d7e43cc2130272aea1be29b7a6eee212061ebc1131b73d2225971087db702"
     else
       url "https://github.com/pentoshi007/clai/releases/download/v#{version}/clai-bun-darwin-x64"
-      sha256 "77b7972957acd47858c77a536d71d6d69ff8ded026a2f20c959d355ded248b66"
+      sha256 "91036ab1cf8f360a8d0458b7e9142d98279e51e2ff8b188b9c0dd883123ee478"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/pentoshi007/clai/releases/download/v#{version}/clai-bun-linux-arm64"
-      sha256 "28c4eb144a7d2a542d88afb683ffbb0c3c7321f8d10ddd5133698e5400a9529e"
+      sha256 "8ab1ce39c0f1b569250a8aa6e80210de58275b699062705429066e55431d9ede"
     else
       url "https://github.com/pentoshi007/clai/releases/download/v#{version}/clai-bun-linux-x64"
-      sha256 "f27940fdf447360be551748876cd63b9d646f9e052f348a5704817009092f047"
+      sha256 "591e4f172750473bc4805e0229fdccffd5245370f125de0b40d45e3d3694341c"
     end
   end
 
